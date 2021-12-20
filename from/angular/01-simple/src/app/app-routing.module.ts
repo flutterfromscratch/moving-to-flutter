@@ -5,7 +5,7 @@ import {InspectComponent} from "./recipes/inspect/inspect.component";
 
 const routes: Routes = [
   { path: '', component: RecipesComponent},
-  {path: 'inspect', component: InspectComponent}
+  {path: 'inspect/:id', component: InspectComponent, pathMatch: 'full'}
 ];
 
 @NgModule({

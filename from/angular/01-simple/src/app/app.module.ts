@@ -9,6 +9,7 @@ import { RecipesComponent } from './recipes/recipes.component';
 import { InspectComponent } from './recipes/inspect/inspect.component';
 import {MatCardModule} from "@angular/material/card";
 import {FlexLayoutModule} from "@angular/flex-layout";
+import {MatButtonModule} from "@angular/material/button";
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import {FlexLayoutModule} from "@angular/flex-layout";
     MatToolbarModule,
     MatCardModule,
     FlexLayoutModule,
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

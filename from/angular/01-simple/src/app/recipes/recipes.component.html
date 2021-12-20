@@ -1,6 +1,9 @@
 <div>
-  <mat-card fxLayout="row" *ngFor="let recipe of availableRecipies">
-    <img src="assets/{{recipe.picture}}" style="width: 200px; height: 200px; object-fit: cover;">
-    <div>{{recipe.name}}</div>
+  <mat-card fxLayout="row" *ngFor="let recipe of availableRecipies" style="margin: 40px">
+    <img src="assets/{{recipe.picture}}" style="object-fit: cover;" fxFlex="30">
+    <div fxFlex="70" style="text-align: center;" >
+      <h1>{{recipe.name}}</h1>
+      <button mat-raised-button [routerLink]="['inspect', recipe.id]">OPEN RECIPE</button>
+    </div>
   </mat-card>
 </div>

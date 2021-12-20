@@ -15,7 +15,7 @@ export const recipes = [{
   steps: ['Open potato chip packet', 'Pour into bowl', 'Eat!']
 }] as Array<Recipe>;
 
-interface Recipe {
+export interface Recipe {
   name: string;
   picture: string;
   steps: string[];
